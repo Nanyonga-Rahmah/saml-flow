@@ -22,10 +22,7 @@ outstanding_queries = {}
 def home():
     return """
     <h1>My SAML Service Provider</h1>
-
     <p><a href="/login">Login with SAML</a></p>
-
-
     """
 
 
@@ -46,18 +43,9 @@ def login():
 
     headers = dict(http_info["headers"])
 
-   
-  
     return redirect(headers["Location"])
 
    
-
-
-
-
-
-
-
 @app.route("/acs", methods=["POST"])
 def acs():
     """

@@ -42,17 +42,6 @@ server = Server(
 )
 
 
-# @app.route("/")
-# def home():
-#     return """
-#     <h1>My Identity Provider</h1>
-
-#     <ul>
-#         <li><a href="/metadata">View Metadata</a></li>
-#     </ul>
-#     """
-
-
 @app.route("/metadata")
 def metadata():
 
