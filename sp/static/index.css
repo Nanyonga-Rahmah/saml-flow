@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+body {
+    background-color: #f4f4f4;
+    background-image: url('https://media.architecturaldigest.com/photos/5cf945fce56e2a6bd5dac7aa/16:9/w_2560%2Cc_limit/ladder%2520hall00002.jpg');
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+
+}
+.button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+h3{
+    font-size: 24px;
+    font-weight: bold;
+}
+p{
+    font-size: 16px;
+    font-weight: normal;
+}
+.container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border:1px solid #ccc;
+    background-color: rgba(255, 255, 255, 0.8);
+}

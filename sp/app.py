@@ -2,7 +2,7 @@ import base64
 import urllib.parse
 import zlib
 
-from flask import Flask, jsonify, redirect,request
+from flask import Flask, jsonify, redirect,request,render_template
 from saml2 import BINDING_HTTP_POST
 from saml2.client import Saml2Client
 from saml2.config import Config
@@ -20,10 +20,9 @@ outstanding_queries = {}
 
 @app.route("/")
 def home():
-    return """
-    <h1>My SAML Service Provider</h1>
-    <p><a href="/login">Login with SAML</a></p>
-    """
+     
+  return render_template("home.html")
+    
 
 
 @app.route("/login")
@@ -43,9 +42,18 @@ def login():
 
     headers = dict(http_info["headers"])
 
+   
+  
     return redirect(headers["Location"])
 
    
+
+
+
+
+
+
+
 @app.route("/acs", methods=["POST"])
 def acs():
     """
