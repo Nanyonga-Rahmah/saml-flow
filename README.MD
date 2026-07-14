@@ -345,7 +345,6 @@ project/
 
 # Lessons Learned
 
-This project provided hands-on experience with:
 
 - SAML 2.0 authentication
 - Service Providers (SP)
